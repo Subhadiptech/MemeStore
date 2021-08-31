@@ -1,4 +1,4 @@
-# MemeStore
+# MemeStore (Pre Release)
 My First Android Application
 
 
