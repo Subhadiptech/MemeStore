@@ -7,20 +7,23 @@
     tools:context=".SplashActivity"
     android:background="@drawable/bg_yellow_solid">
 
-    <ImageView
-        android:id="@+id/splashimg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/splash_main"
-        />
+   <com.airbnb.lottie.LottieAnimationView
+       android:layout_width="360dp"
+       android:layout_height="220dp"
+       app:layout_constraintTop_toBottomOf="@id/welcome"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginTop="36dp"
+       app:lottie_rawRes="@raw/dancers"
+       app:lottie_autoPlay="true"
+       app:lottie_loop="true"
+
+       />
     <TextView
+        android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lets"
         android:text="WELCOME MEME LOVER'S"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -32,12 +35,14 @@
 
         />
     <TextView
+        android:id="@+id/lets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/splashimg"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text="Lets Go &#33;"
+        android:layout_marginTop="56dp"
         android:textSize="28sp"
         android:textColor="@color/black"
 

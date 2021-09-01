@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //todo:share intent
+                //todo:Lock Orientation
 
                 Toast.makeText(MainActivity.this, "Under Development", Toast.LENGTH_SHORT).show();
             }
